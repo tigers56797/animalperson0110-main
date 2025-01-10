@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* 確保全局字體一致 */
+  background-color: #000000 !important; /* 背景色 */
+  width: 100%; /* 確保寬度自適應 */
+  height: 100%; /* 確保高度自適應 */
+  overflow: hidden; /* 防止出現滾動條 */
+  box-sizing: border-box; /* 確保內外邊距計算正確 */
+}
+
+html, body, #app, * {
+  outline: 1px solid red;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* 撐滿寬度 */
+  height: 100%; /* 撐滿高度 */
+  overflow-x: hidden;
+  max-width: 100%;
+  background-color: inherit; /* 使用與 body 相同的背景色 */
+  position: relative; /* 相對定位，給子元素提供基準 */
+  box-sizing: border-box;
+  overflow-x: hidden; /* 防止水平滾動條 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* 防止圖片超出容器 */
+}
